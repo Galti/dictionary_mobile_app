@@ -1,17 +1,21 @@
+import 'package:dictionary_mobile_app/App.dart';
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(ADTechnicalVocabulary());
 
-class MyApp extends StatelessWidget {
+class ADTechnicalVocabulary extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'A.D. Technical Vocabulary',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Center(
-        child: Text('Hello dictionary!'),
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('A.D. Technical Vocabulary'),
+        ),
+        body: App(),
       ),
     );
   }
