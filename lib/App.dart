@@ -1,3 +1,6 @@
+import 'package:dictionary_mobile_app/screens/DescriptionScreen.dart';
+import 'package:dictionary_mobile_app/screens/SearchScreen.dart';
+import 'package:dictionary_mobile_app/screens/SettingsScreen.dart';
 import 'package:flutter/material.dart';
 
 class App extends StatefulWidget {
@@ -36,9 +39,9 @@ class _AppState extends State<App> {
         currentIndex: _selectedIndex,
       ),
       body: [
-        Text('Search Screen'),
-        Text('Description Screen'),
-        Text('Settings Screen'),
+        SearchScreen(),
+        DescriptionScreen(),
+        SettingsScreen(),
       ].elementAt(_selectedIndex),
     );
   }
